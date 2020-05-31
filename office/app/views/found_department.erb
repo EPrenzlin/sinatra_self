@@ -1,0 +1,12 @@
+<h1> Welcome to the Department search page</h1>
+
+<h1> This is the <%=@found_department[0].department%> page</h1>
+
+<%@found_department.each_with_index do |person,index |%> 
+<h2> Profile</h2>
+Name:<%=person.name%><br>
+Title : <%=person.title%><br>
+Salary(£):<%=person.salary%><br>
+Useful?<%=person.useful%><br>
+Experience(1 is minimum, 5 is max): <%=person.experience%><br>
+<%end%>

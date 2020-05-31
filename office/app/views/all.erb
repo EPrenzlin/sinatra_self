@@ -1,0 +1,10 @@
+<h1> All the current associates </h1> 
+
+<h2>Profiles</h2>
+
+<%@all.each do |employee|%>
+<p>Name: <%=employee.name%></p>
+<p>Department: <%=employee.department%></p>
+<p>title: <%=employee.title%></p>
+<p> ------------ </p>
+<%end%>
